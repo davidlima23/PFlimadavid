@@ -4,64 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Libreria Mailotic</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- linkeado al CSS  para darle forma o color -->
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
   <body class="fondo">
     <!--esto es el header-->
     <header>
+      <div class="encabezado">
       <img
         src="./multimedia/milotic-logotipo-header.jpg"
         alt="logotipo"
-        class="logo"
-      />
+        class="logoprincipal">
+        <h1 class="titulo">Libreria mailotic</h1>
+      </div>
+
       <nav>
-        <h1>Libreria mailotic</h1>
-        <a href="./pages/productos.html">producto</a>
-        <a href="./pages/sucursal.html">sucursal</a>
+        <a href="./pages/productos.html" class="link">producto</a>
+        <a href="./pages/sucursal.html" class="link">sucursal</a>
         <form>
-          <input type="text" placeholder="Buscar un producto" />
+          <input type="text" placeholder="Buscar un producto" class="search" />
         </form>
-        <a href="./pages/carrito.html">carrito</a>
-        <a href="./pages/cuenta.html">cuenta</a>
-        <a href="./pages/contacto.html">contacto</a>
+        <a href="./pages/carrito.html" class="link">carrito</a>
+        <a href="./pages/cuenta.html" class="link">cuenta</a>
+        <a href="./pages/contacto.html" class="link">contacto</a>
       </nav>
     </header>
     <!-- aca va el contenido principal. la lista de productos destacados como ejemplo con alguna imagen. se supone que debe ser un carrusel, pero lo defino por imagen y texto.-->
     <main>
-      <section>
-        <p>productos destacados</p>
-        <img
-          src="./multimedia/hoja-rivadavia.jpg"
-          alt="utiles-hoja-rivadavia"
-          class="productos"
-        />
-        <article>
-          <p>hojas rivadavia 32 hojas</p>
-        </article>
-        <img
-          src="./multimedia/carpeta-escolar.jpg"
-          alt="carpeta-escolar"
-          class="productos"
-        />
-        <p>carpeta escolar</p>
-        <img
-          src="./multimedia/adhesivas-notas.png"
-          alt="notas-adhesivas"
-          class="productos"
-        />
-        <p>notas adhesivas</p>
+      <!--una prueba de colocar boostrap y grid system en section main-->
+      <section class="container">
+        <div class="row">
+          <!--brakpoints-->
+          <h2>categorias</h2>
+          <p>paquete de hojas</p>
+          <div class="col-lg4 col-md-4 col-sm-12"><img src="./multimedia/hoja-rivadavia.jpg" alt="" class="productos"></div>
+          <p>carpetas</p>
+          <div class="col-lg4 col-md-4-12"><img src="./multimedia/carpeta-escolar.jpg" alt="" class="productos"></div>
+          <p>utiles variados</p>
+          <div class="col-lg4 col-md-4-12"><img src="./multimedia/adhesivas-notas.png" alt="" class="productos"></div> 
+        </div>
       </section>
     </main>
 
-    <aside>
+    <aside class="asidestyle">
+      <section>
       <p>¡siguenos!</p>
       <!--la direccion del enlace los dirije a youtube, lo use como ejemplo ya que no cuenta con instagram de momento-->
 
       <img
         src="./multimedia/instagramlogo.png"
         alt="nuestro instagram"
-        class="logo"
+        class="logotiktokins"
       />
       <a
         href="https://www.instagram.com/libreria_mailotic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -71,7 +70,7 @@
       <img
         src="./multimedia/facebooklogo.png"
         alt="nuestro facebook"
-        class="logo"
+        class="logoredes"
       />
       <a
         href="https://youtube.com/@senormeromero8138?si=sj8djn-9_TAaYff9"
@@ -81,7 +80,7 @@
       <img
         src="./multimedia/tiktoklogo.png"
         alt="nuestro tiktok"
-        class="logo"
+        class="logotiktokins"
       />
       <a
         href="https://youtube.com/@senormeromero8138?si=sj8djn-9_TAaYff9"
@@ -102,7 +101,7 @@
       <img
         src="./multimedia/whatsapp-logo.png"
         alt="nuestro whatsapp"
-        class="logo"
+        class="logofooterwhat"
       />
       <a
         href="https://youtube.com/@senormeromero8138?si=JZh3uJXronoNi8h2"
@@ -110,5 +109,10 @@
         >nuestro whatsapp aca</a
       >
     </footer>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>

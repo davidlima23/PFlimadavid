@@ -99,6 +99,6 @@ ul {
         grid-template-areas:
         "header header header header header"
         "nav productos productos productos"
-        "footer footer footer footer footer";
+        "footer footer footer footer footer"
     }
 }
