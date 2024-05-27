@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactos</title>
+    <!-- linkeado al css -->
+    <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body>
+    <!--esto es el header-->
+    <header>
+        <h1>Libreria mailotic</h1>
+        <img src="./../multimedia/milotic-logotipo-header.jpg" alt="logotipo libreria mailotic" class="logo">
+        <nav>
+          <a href="./productos.html">producto</a>
+          <a href="./sucursal.html">sucursal</a>
+          <form>
+            <input type="text" placeholder="Buscar un producto">
+          </form>
+          <a href="./carrito.html">carrito</a>
+          <a href="./cuenta.html">cuenta</a>
+          <a href="./../index.html">Inicio</a>
+        </nav>
+      </header>
+      <main>
+        <!-- aca iria el centro principal de ayuda al cliente, un formulario simple.-->
+        <section>
+        <h2>¿Necesitas ayuda? por favor, completa el formulario</h2>
+        <article>
+            <form>
+                <label for="Username">
+                    Nombre de usuario
+                </label>
+                <input type="text">
+
+                <label for="UserEmail">
+                    Correo electronico
+                </label>
+                <input id="UserEmail" type="email" placeholder="example@domain.com" required>
+                
+                <label for="password">
+                    contraseña
+                </label>
+                <input id="password" type="password" required>
+                </form>
+                <div>
+                    <input type="submit" value="Enviar"/>
+                </div>
+
+
+                <label for="fieldUserDescription">comentanos</label>
+                <textarea name="fieldUserDescription" id="fieldUserDescription" cols="30" rows="10" placeholder="describe tu consulta"></textarea>
+
+
+
+        </article>
+        </section>
+      </main>    
+    <aside>
+        <p>¡siguenos!</p>
+        <!--la direccion del enlace los dirije a youtube, lo use como ejemplo ya que no cuenta con instagram de momento-->
+
+        <img src="../multimedia/instagramlogo.png" alt="nuestro instagram" class="redes">
+        <a href="https://youtube.com/@senormeromero8138?si=sj8djn-9_TAaYff9" target="_blank">instagram</a>
+        <img src="../multimedia/facebooklogo.png" alt="nuestro facebook" class="redes">
+        <a href="https://youtube.com/@senormeromero8138?si=sj8djn-9_TAaYff9" target="_blank">facebook</a>
+        <img src="../multimedia/tiktoklogo.png" alt="nuestro tiktok" class="redes">
+        <a href="https://youtube.com/@senormeromero8138?si=sj8djn-9_TAaYff9" target="_blank">tiktok</a>
+
+        <!--aca se deberia interactuar con los logos que los llevaria a las redes sociales-->
+
+    </aside>
+
+    <footer>
+        <h3>Acerca de</h3>
+        <a href="./nosotros.html">Nosotros</a>
+        <p>nos encargamos de dar una mejor atencion a nuestros clientes!</p>
+        <p>tambien puedes consultarnos a nuestro atencion al cliente por whatsapp</p>
+        <img src="./../multimedia/whatsapp-logo.png" alt="nuestro whatsapp" class="redes">
+        <a href="https://youtube.com/@senormeromero8138?si=JZh3uJXronoNi8h2" target="_blank">nuestro whatsapp aca</a>
+        <!--aca deberia dirigirnos a whatsapp, pero puse como ejemplo un enlace a youtube.-->
+    </footer>
+
+      
+    
+</body>
+</html>
