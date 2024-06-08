@@ -13,26 +13,32 @@
     <!-- linkeado al CSS  para darle forma o color -->
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
-  <body class="fondo">
+  <body>
     <!--esto es el header-->
     <header>
-      <div class="encabezado">
-      <img
-        src="./multimedia/milotic-logotipo-header.jpg"
-        alt="logotipo"
-        class="logoprincipal">
-        <h1 class="titulo">Libreria mailotic</h1>
-      </div>
-
-      <nav>
-        <a href="./pages/productos.html" class="link">producto</a>
-        <a href="./pages/sucursal.html" class="link">sucursal</a>
-        <form>
-          <input type="text" placeholder="Buscar un producto" class="search" />
-        </form>
-        <a href="./pages/carrito.html" class="link">carrito</a>
-        <a href="./pages/cuenta.html" class="link">cuenta</a>
-        <a href="./pages/contacto.html" class="link">contacto</a>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/productos.html">productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sucursal.html">sucursal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <!-- aca va el contenido principal. la lista de productos destacados como ejemplo con alguna imagen. se supone que debe ser un carrusel, pero lo defino por imagen y texto.-->
@@ -52,41 +58,26 @@
       </section>
     </main>
 
-    <aside class="asidestyle">
-      <section>
-      <p>¡siguenos!</p>
+    <aside>
+      <h2>¡siguenos!</h2>
       <!--la direccion del enlace los dirije a youtube, lo use como ejemplo ya que no cuenta con instagram de momento-->
+      <div class="container">
+      <a href="https://www.instagram.com/libreria_mailotic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+        <img src="./multimedia/facebooklogo.png" alt="" class="logoredes">
 
-      <img
-        src="./multimedia/instagramlogo.png"
-        alt="nuestro instagram"
-        class="logotiktokins"
-      />
-      <a
-        href="https://www.instagram.com/libreria_mailotic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-        target="_blank"
-        >instagram</a
-      >
-      <img
-        src="./multimedia/facebooklogo.png"
-        alt="nuestro facebook"
-        class="logoredes"
-      />
-      <a
-        href="https://youtube.com/@senormeromero8138?si=sj8djn-9_TAaYff9"
-        target="_blank"
-        >facebook</a
-      >
-      <img
-        src="./multimedia/tiktoklogo.png"
-        alt="nuestro tiktok"
-        class="logotiktokins"
-      />
-      <a
-        href="https://youtube.com/@senormeromero8138?si=sj8djn-9_TAaYff9"
-        target="_blank"
-        >tiktok</a
-      >
+      </a>
+
+      <a href="https://youtube.com/@senormeromero8138?si=sj8djn-9_TAaYff9"
+        target="_blank">
+        <img src="./multimedia/tiktoklogo.png" alt="" class="logotiktokins">
+      
+      </a>
+    
+      <a href="https://youtube.com/@senormeromero8138?si=sj8djn-9_TAaYff9"
+        target="_blank">
+        <img src="./multimedia/instagramlogo.png" alt="" class="logotiktokins">
+      </a>
+      </div>
 
       <!--aca se deberia interactuar con los logos que los llevaria a las redes sociales-->
     </aside>
