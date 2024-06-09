@@ -1,13 +1,286 @@
 @font-face {
-    font-family: "Estilo Lib";
-    src: url("./../fonts/Anton-Regular.ttf");
+  font-family: "Estilo Lib";
+  src: url("./../fonts/Anton-Regular.ttf");
 }
 p, h1, h2, h3 {
-    font-family: "Estilo lib", Arial, helvetica, sans-serif;
+  font-family: "Estilo lib", Arial, helvetica, sans-serif;
 }
 
 h1, h2, h3 {
-    color: rgb(44, 47, 51);
+  color: rgb(44, 47, 51);
+}
+
+.sucursal {
+  background: linear-gradient(to right, orange, skyblue);
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  background-color: hwb(200 72% 3%);
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 70vh;
+  margin: 10px;
+}
+
+.divproducto {
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 100px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: stretch;
+  align-content: stretch;
+  justify-items: stretch;
+  align-items: stretch;
+  text-align: center;
+}
+
+.box-contacto {
+  background-image: linear-gradient(to bottom, orange, skyblue);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px 10px 10px;
+}
+
+form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+}
+
+.contacto-input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contactotitle {
+  color: #283629;
+  font-size: 30px;
+}
+
+label {
+  color: #283629;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #EDFFF0;
+  border: 2px solid #F0FAF1;
+  color: #283629;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #b5cab6;
+}
+
+.boton-contacto {
+  font-size: 16px;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 25px;
+  background-color: #51D94C;
+  box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+  cursor: pointer;
+}
+
+.boton-contacto:hover {
+  background-color: #50E04B;
+}
+
+.logoprincipal {
+  width: 200px;
+  height: 100px;
+  margin-left: 400px;
+}
+
+.encabezado {
+  width: 100%;
+  height: 70px;
+}
+
+.flexnav {
+  justify-content: space-evenly;
+}
+
+p {
+  color: rgb(4, 31, 31);
+}
+
+aside {
+  background: linear-gradient(to right, orange, aqua);
+  width: 100%;
+  height: 25vh;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.tiktokimg {
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.tiktokimg:hover {
+  transform: scale(1.4);
+  transition: 4s;
+}
+
+.instagramimg {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.instagramimg:hover {
+  transform: scale(1.4);
+  transition: 4s;
+}
+
+.facebookimg {
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.facebookimg:hover {
+  transform: scale(1.4);
+  transition: 4s;
+}
+
+.titleaside {
+  text-align: center;
+}
+
+footer {
+  background-image: linear-gradient(to left, orange, skyblue);
+  display: flow-root;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  transition: 3s;
+}
+
+.logofooterwhat {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.logofooterwhat:hover {
+  transform: scale(1.2);
+  transition: 3s;
+}
+
+header h1 {
+  background-color: rgba(175, 245, 239, 0.877);
+  text-align: center;
+  display: 100%;
+}
+
+.logoredes {
+  width: 100px;
+  height: 100px;
+}
+
+.logotiktokins {
+  width: 60px;
+  height: 60px;
+}
+
+.productos {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  justify-content: center;
+  margin: 0px 15px;
+}
+
+.opciones {
+  background-color: rgb(231, 187, 105);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-image: url(../../multimedia/mailoticlibreria.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 1080px) {
+  #grilla {
+    grid-template-rows: 130px 5fr 3fr 80px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "header header header header header" "nav productos productos productos" "footer footer footer footer footer";
+  }
+}
+@media (max-width: 991px) {
+  .box-contacto {
+    padding: 30px;
+  }
+  form {
+    padding: 50px 30px;
+    width: 100%;
+  }
+  input {
+    padding: 15px 10px;
+  }
+}
+@media (max-width: 991px) {
+  .aside {
+    padding: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .footer {
+    padding: 30px;
+    width: 100%;
+    height: 100vh;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
