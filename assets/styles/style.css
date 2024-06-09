@@ -10,9 +10,6 @@ h1, h2, h3 {
     color: rgb(44, 47, 51);
 }
 
-.bg-body-tertiary {
-    background-color: rgb(238, 205, 139);
-}
 
 section {
     background-color: hwb(198 70% 2%);

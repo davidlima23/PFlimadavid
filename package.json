@@ -1,0 +1,24 @@
+{
+  "name": "preentrega1limadavid",
+  "version": "1.0.0",
+  "description": "en este proyecto vamos a implementar sass y ceo para mi futuro proyecto final",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidlima23/PreEntrega3lima.git"
+  },
+  "keywords": [
+    "products",
+    "shop",
+    "node"
+  ],
+  "author": "david lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidlima23/PreEntrega3lima/issues"
+  },
+  "homepage": "https://github.com/davidlima23/PreEntrega3lima#readme"
+}

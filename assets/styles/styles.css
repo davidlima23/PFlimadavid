@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Estilo Lib";
+    src: url("./../fonts/Anton-Regular.ttf");
+}
+p, h1, h2, h3 {
+    font-family: "Estilo lib", Arial, helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    color: rgb(44, 47, 51);
+}
+
+/*# sourceMappingURL=styles.css.map */
