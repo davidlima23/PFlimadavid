@@ -9,42 +9,99 @@ p, h1, h2, h3 {
 h1, h2, h3 {
     color: rgb(44, 47, 51);
 }
+.box-index {
+    background-color: skyblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
 .sucursal {
     background: linear-gradient(to right, orange, skyblue);
     width: 100%;
     height: 100vh;
     padding: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-
-
-section {
-    background-color: hwb(200 72% 3%);
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 70vh;
-    margin: 10px;
-
-}
-
-.divproducto {
-    background-color: red;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: 100px 100px;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: stretch;
-    align-content: stretch;
-    justify-items: stretch;
-    align-items: stretch;
     text-align: center;
-
 }
+.box-sucursal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.text-sucursal {
+    font-weight: 400;
+    font-size: 25px;
+}
+.box-sucursal p{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+
+.box-producto {
+    background: linear-gradient(to right, rgb(255, 208, 0), rgb(228, 136, 136),skyblue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.card img{
+    width: 100%;
+    height: 210px;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p{
+    line-height: 1.5;
+    color:#6a6a6a;
+}
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color:#2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+/*
+.divproducto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+    *///
+
 
 .box-contacto {
     background-image: linear-gradient(to bottom, orange, skyblue);
@@ -199,26 +256,10 @@ footer {
 }
 
 header h1 {
-    background-color: rgba(175, 245, 239, 0.877);
+    background-color: rgba(151, 238, 231, 0.877);
     text-align: center;
     display: 100%;
 
-}
-
-.logoredes {
-    width: 100px;
-    height: 100px;
-}
-.logotiktokins {
-    width: 60px;
-    height: 60px;
-}
-.productos {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    justify-content: center;
-    margin: 0px 15px;
 }
 
 .opciones {
@@ -237,10 +278,45 @@ body {
     background-attachment: fixed;
 }
 
+.nosotros-libreria {
+    background: linear-gradient(to right, orange, rgb(230, 144, 144), skyblue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.nosotros-libreria  h2{
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.nosotros-libreria p{
+    padding: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    
+}
+.nosotros-libreria img{
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 25px;
+    cursor:pointer;
+}
+.nosotros-libreria img:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
 
 ul {
     list-style-type: none;
 }
+/*
 @media screen and (min-width: 1080px) {
     #grilla {
         grid-template-rows:130px 5fr 3fr 80px;
@@ -251,6 +327,7 @@ ul {
         "footer footer footer footer footer"
     }
 }
+*///
 
 @media(max-width:991px) {
     .box-contacto {
@@ -276,4 +353,19 @@ ul {
         width: 100%;
         height: 100vh;
     }
+}
+@media(max-width: 991px) {
+    .box-producto {
+        padding: 30px;
+    }
+
+    .card {
+        padding: 50px 30px;
+        width: 100%;
+    }
+    .contenedor {
+        padding: 15px 10px;
+
+    }
+
 }
