@@ -1,0 +1,70 @@
+.box-contacto {
+    background-image: linear-gradient(to bottom, orange, skyblue);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+}
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+.contacto-input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+.contactotitle {
+    color: #283629;
+    font-size: 30px;
+}
+label {
+    color:#283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid #F0FAF1;
+    color: #283629;
+    outline: none;
+}
+input::placeholder, textarea::placeholder {
+    color:#b5cab6;
+}
+.boton-contacto {
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51D94C;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+}
+.boton-contacto:hover {
+    background-color: #50E04B;
+}
+
+@media(max-width:991px) {
+    .box-contacto {
+        padding: 30px;
+    }
+
+    form {
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input {
+        padding: 15px 10px;
+    }
+}

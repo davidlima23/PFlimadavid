@@ -1,6 +1,11 @@
 @import "./componentes/aside";
 @import "./componentes/footer";
 @import "./componentes/mainNosotros";
+@import "./componentes/mainsucursal";
+@import "./componentes/mainproductos";
+@import "./componentes/maincontacto";
+@import "./componentes/mainindex";
+@import "./componentes/header";
 
 
 
@@ -15,88 +20,6 @@ p, h1, h2, h3 {
 h1, h2, h3 {
     color: rgb(44, 47, 51);
 }
-.box-index {
-    background: linear-gradient(to right, orange, rgb(252, 175, 175), skyblue);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-}
-.sucursal {
-    background: linear-gradient(to right, orange, skyblue);
-    width: 100%;
-    height: 100vh;
-    padding: 10px;
-    text-align: center;
-}
-.box-sucursal {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-.text-sucursal {
-    font-weight: 400;
-    font-size: 25px;
-}
-.box-sucursal p{
-    font-weight: 400;
-    font-size: 25px;
-}
-
-
-.box-producto {
-    background: linear-gradient(to right, rgb(255, 208, 0), rgb(228, 136, 136),skyblue);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-}
-.card{
-    width: 100%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-}
-.card:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(-3%);
-}
-.card img{
-    width: 100%;
-    height: 210px;
-}
-.card .contenido{
-    padding: 15px;
-    text-align: center;
-}
-.card .contenido p{
-    line-height: 1.5;
-    color:#6a6a6a;
-}
-.card .contenido h3{
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-.card .contenido a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color:#2fb4cc;
-    border: 1px solid #2fb4cc;
-    border-radius: 4px;
-    transition: all 400ms ease;
-}
 
 /*
 .divproducto {
@@ -108,78 +31,11 @@ h1, h2, h3 {
 }
     *///
 
-
-.box-contacto {
-    background-image: linear-gradient(to bottom, orange, skyblue);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 10px 10px 10px;
-}
-
-form {
-    padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    text-align: center;
-    width: 340px;
-}
-.contacto-input {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    
-}
-.contactotitle {
-    color: #283629;
-    font-size: 30px;
-}
-label {
-    color:#283629;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-input, textarea {
-    padding: 17px 25px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    background-color: #EDFFF0;
-    border: 2px solid #F0FAF1;
-    color: #283629;
-    outline: none;
-}
-input::placeholder, textarea::placeholder {
-    color:#b5cab6;
-}
-.boton-contacto {
-    font-size: 16px;
-    color: #FFFFFF;
-    border: 0;
-    border-radius: 25px;
-    background-color: #51D94C;
-    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
-    cursor: pointer;
-}
-.boton-contacto:hover {
-    background-color: #50E04B;
-}
-
 .logoprincipal {
     width: 200px;
     height: 100px;
     margin-left: 400px;
 
-
-}
-.encabezado {
-    width: 100%;
-    height: 70px;
-    
-}
-.flexnav {
-    justify-content: space-evenly;
 
 }
 
@@ -189,18 +45,8 @@ p {
 
 
 
-.titulo {
-    font-size: 25px;
-    text-align: center;
-    margin-top: 15px; 
-}
 
-.opciones {
-    background-color: rgb(231, 187, 105);
-    display: flex;
-    justify-content: space-evenly;
 
-}
 body {
     margin: 0;
     background-repeat: no-repeat;
@@ -212,19 +58,6 @@ body {
 }
 
 
-.logonav {
-    width: 80px;
-    border-radius: 15px;
-    cursor:pointer;
-}
-
-.navbar {
-    background-color: rgb(236, 216, 178);
-}
-
-ul {
-    list-style-type: none;
-}
 /*
 @media screen and (min-width: 1080px) {
     #grilla {
@@ -239,19 +72,6 @@ ul {
 *///
 
 @media(max-width:991px) {
-    .box-contacto {
-        padding: 30px;
-    }
-
-    form {
-        padding: 50px 30px;
-        width: 100%;
-    }
-    input {
-        padding: 15px 10px;
-    }
-}
-@media(max-width:991px) {
     .aside {
         padding: 30px;
     }
@@ -262,19 +82,4 @@ ul {
         width: 100%;
         height: 100vh;
     }
-}
-@media(max-width: 991px) {
-    .box-producto {
-        padding: 30px;
-    }
-
-    .card {
-        padding: 50px 30px;
-        width: 100%;
-    }
-    .contenedor {
-        padding: 15px 10px;
-
-    }
-
 }
