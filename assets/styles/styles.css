@@ -2,7 +2,6 @@ aside {
   background: linear-gradient(to right, orange, aqua);
   width: 100%;
   height: 25vh;
-  margin: 10px;
   border-radius: 10px;
 }
 
@@ -44,6 +43,11 @@ aside {
   transition: 4s;
 }
 
+@media (max-width: 991px) {
+  .aside {
+    padding: 30px;
+  }
+}
 footer {
   background-image: linear-gradient(to left, orange, skyblue);
   display: flow-root;
@@ -74,6 +78,23 @@ footer {
 .logofooterwhat:hover {
   transform: scale(1.2);
   transition: 3s;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding: 30px;
+    width: 100%;
+    height: 100vh;
+  }
+}
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-image: url(../../multimedia/mailoticlibreria.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .nosotros-libreria {
@@ -113,6 +134,16 @@ footer {
   transition: 2s;
 }
 
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-image: url(../../multimedia/mailoticlibreria.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .sucursal {
   background: linear-gradient(to right, orange, skyblue);
   width: 100%;
@@ -138,6 +169,16 @@ footer {
 .box-sucursal p {
   font-weight: 400;
   font-size: 25px;
+}
+
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-image: url(../../multimedia/mailoticlibreria.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .box-producto {
@@ -214,6 +255,16 @@ ul {
     grid-template-areas: "productos";
   }
 }
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-image: url(../../multimedia/mailoticlibreria.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .box-contacto {
   background-image: linear-gradient(to bottom, orange, skyblue);
   min-height: 100vh;
@@ -289,6 +340,16 @@ input::placeholder, textarea::placeholder {
     padding: 15px 10px;
   }
 }
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-image: url(../../multimedia/mailoticlibreria.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .box-index {
   background: linear-gradient(to right, orange, rgb(252, 175, 175), skyblue);
   width: 100%;
@@ -313,6 +374,11 @@ input::placeholder, textarea::placeholder {
   cursor: pointer;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: "Estilo Lib";
   src: url("./../fonts/Anton-Regular.ttf");
@@ -325,33 +391,8 @@ h1, h2, h3 {
   color: rgb(44, 47, 51);
 }
 
-/*
-.divproducto {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-}
-    */
-.logoprincipal {
-  width: 200px;
-  height: 100px;
-  margin-left: 400px;
-}
-
 p {
   color: rgb(4, 31, 31);
-}
-
-body {
-  margin: 0;
-  background-repeat: no-repeat;
-  background-image: url(../../multimedia/mailoticlibreria.jpg);
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 /*
@@ -366,17 +407,14 @@ body {
     }
 }
 */
-@media (max-width: 991px) {
-  .aside {
-    padding: 30px;
-  }
+/*
+.divproducto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
 }
-@media (max-width: 991px) {
-  .footer {
-    padding: 30px;
-    width: 100%;
-    height: 100vh;
-  }
-}
+    */
 
 /*# sourceMappingURL=styles.css.map */

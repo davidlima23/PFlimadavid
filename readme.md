@@ -1,3 +1,3 @@
 # esto es un readme
 
-# esto es la preentrega 2
+# este es mi proyecto final de una tienda de libreria

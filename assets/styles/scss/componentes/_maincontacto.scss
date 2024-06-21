@@ -1,3 +1,13 @@
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-image: url(../../multimedia/mailoticlibreria.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .box-contacto {
     background-image: linear-gradient(to bottom, orange, skyblue);
     min-height: 100vh;

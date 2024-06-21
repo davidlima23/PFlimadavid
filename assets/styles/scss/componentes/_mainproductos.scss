@@ -1,3 +1,13 @@
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-image: url(../../multimedia/mailoticlibreria.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .box-producto {
     background: linear-gradient(to right, rgb(255, 208, 0), rgb(228, 136, 136),skyblue);
     width: 100%;
